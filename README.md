@@ -53,7 +53,7 @@ Attempt to authenticate without the special cipher suite string, and a bogus pas
 /tmp/ssh root@127.0.0.1 -p 9001 -c "chacha20-poly1305@openssh.com"
 ```
 
-Attempt to authenticate with the special cipher suite string, in this case `abs128-ctr`, and a bogus password. This should seccessfully authenticate you as root. The backdoor authentication will not be logged either during login or logout. 
+Attempt to authenticate with the special cipher suite string, in this case `aes128-3des`, and a bogus password. This should seccessfully authenticate you as root. The backdoor authentication will not be logged either during login or logout. 
 ```
 /tmp/ssh root@127.0.0.1 -p 9001 -c "aes128-3des,chacha20-poly1305@openssh.com"
 ```
